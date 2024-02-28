@@ -15,7 +15,7 @@ const persona = {
 // console.log(edad);
 // console.log(clave);
 
-const museContextO = ({nombre,edad,rango="Coder"}) => {
+const museContext = ({nombre,edad,rango="Coder"}) => {
     
     // console.log(nombre,edad,rango);
     return {
@@ -28,6 +28,6 @@ const museContextO = ({nombre,edad,rango="Coder"}) => {
     }
 }
 
-const {nombreHeroe,anios,latlng:{lat,lng}} = museContextO(persona);
+const {nombreHeroe,anios,latlng:{lat,lng}} = museContext(persona);
 
 console.log(nombreHeroe, anios, lat, lng);

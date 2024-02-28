@@ -7,9 +7,9 @@ console.log(heroes);
 
 // El método find() devuelve el valor del primer elemento del array que cumple la función de prueba proporcionada.
 
-const getHeroeById = (id) => {
+export const getHeroeById = (id) => {
     const result = heroes.find((heroe)=> heroe.id === id);
-    return result.name;
+    return result;
 }
 
 console.log(getHeroeById(2));
