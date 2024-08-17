@@ -1,6 +1,7 @@
 //estos elementos son los que necesito para renderizar mi app
 import React from 'react'
 import ReactDOM from 'react-dom/client'
+import './styles.css';
 import { HelloWorldApp } from './HelloWorldApp'
 import CounterApp from './CounterApp/CounterApp'
 
