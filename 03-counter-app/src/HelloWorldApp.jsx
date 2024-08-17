@@ -18,3 +18,8 @@ HelloWorldApp.propTypes = {
   title: PropTypes.string.isRequired,
   subtitle: PropTypes.number.isRequired
 }
+
+//los defaultProps entran antes que los propTypes
+HelloWorldApp.defaultProps = {
+  title: 'No hay titulo'
+}

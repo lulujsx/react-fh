@@ -2,10 +2,12 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { HelloWorldApp } from './HelloWorldApp'
+import CounterApp from './CounterApp/CounterApp'
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
     <React.StrictMode>
-        <HelloWorldApp title='Hola Mundo' subtitle={123456}/>
+        {/* <HelloWorldApp subtitle={123456}/> */}
+        <CounterApp value={10}/>
     </React.StrictMode>
 )
