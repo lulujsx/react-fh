@@ -6,6 +6,6 @@ import { HelloWorldApp } from './HelloWorldApp'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
     <React.StrictMode>
-        <HelloWorldApp/>
+        <HelloWorldApp title='Hola Mundo' subtitle={123456}/>
     </React.StrictMode>
 )

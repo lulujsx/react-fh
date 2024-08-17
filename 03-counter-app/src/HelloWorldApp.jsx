@@ -1,5 +1,20 @@
-export const HelloWorldApp = () => {
+import PropTypes from 'prop-types'
+
+export const HelloWorldApp = ({title,subtitle,}) => {
+
+  // console.log(props)
+
   return (
-    <h1>Hello World</h1>
+    //fragment -> agrupador de elementos html, no crea div adicional
+    <> 
+        <h1>{title}</h1>
+        <h2>{subtitle}</h2>
+        
+    </>
   )
+}
+
+HelloWorldApp.propTypes = {
+  title: PropTypes.string.isRequired,
+  subtitle: PropTypes.number.isRequired
 }
