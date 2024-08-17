@@ -6,7 +6,7 @@ import PropTypes from 'prop-types';
 export default function CounterApp({value}) {
 
   // Cuando cambia el estado, el componente se vuelve a ejecutar
-  console.log('render');
+  //console.log('render');
 
   const [counter, setCounter] = useState(value);
 
