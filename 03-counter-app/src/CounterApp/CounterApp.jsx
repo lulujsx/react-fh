@@ -1,10 +1,31 @@
-import PropTypes from 'prop-types'
+// Documentacion React Eventos
+// https://es.react.dev/reference/react-dom/components/common#react-event-object
+import { useState } from 'react';
+import PropTypes from 'prop-types';
 
 export default function CounterApp({value}) {
+
+  // Cuando cambia el estado, el componente se vuelve a ejecutar
+  console.log('render');
+
+  const [counter, setCounter] = useState(value);
+
+  const handleAdd = () => {
+    setCounter(counter+1);
+  }
+
+  const handleSubstract = () => setCounter(counter-1);
+
+  const handleReset = () => setCounter(value);
+
+
   return (
     <>
         <h1>CounterApp</h1>
-        <h2> { value } </h2>
+        <h2> { counter } </h2>
+        <button onClick={handleAdd}>+1</button>
+        <button onClick={handleSubstract}>-1</button>
+        <button onClick={handleReset}>Reset</button>
     </>
   )
 }
