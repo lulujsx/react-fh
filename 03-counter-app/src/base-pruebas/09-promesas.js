@@ -10,7 +10,7 @@ export const getHeroeByIdAsync = ( id ) => {
             if ( p1 ) {
                 resolve( p1 );
             } else {
-                reject( 'No se pudo encontrar el héroe' );
+                reject( `No se pudo encontrar el heroe ${id}` );
             }
         }, 1000 ) //cuando la promesa se resuelve, en 2 segundos despues tenemos el heroe que se encontro
                   //o sino tenemos un mensaje de error
